@@ -422,14 +422,14 @@ open class LPRTableViewController: UITableViewController, LPRTableViewDelegate {
     /// Asks the delegate whether a given row can be moved to another location in the table view based on the gesture location.
     ///
     /// The default is `true`. The default implementation of this method is empty—no need to call `super`.
-    open func tableView(_ tableView: UITableView, shouldMoveRowAtIndexPath indexPath: IndexPath, forDraggingGesture gesture: UILongPressGestureRecognizer) -> Bool {
+    nonisolated open func tableView(_ tableView: UITableView, shouldMoveRowAtIndexPath indexPath: IndexPath, forDraggingGesture gesture: UILongPressGestureRecognizer) -> Bool {
         return true
     }
     
     /// Provides the delegate a chance to modify the cell visually before dragging occurs.
     ///
     /// Defaults to using the cell as-is if not implemented. The default implementation of this method is empty—no need to call `super`.
-    open func tableView(_ tableView: UITableView, draggingCell cell: UITableViewCell, at indexPath: IndexPath) -> UITableViewCell {
+    nonisolated open func tableView(_ tableView: UITableView, draggingCell cell: UITableViewCell, at indexPath: IndexPath) -> UITableViewCell {
         // Empty implementation, just to simplify overriding (and to show up in code completion).
         return cell
     }
@@ -437,21 +437,21 @@ open class LPRTableViewController: UITableViewController, LPRTableViewDelegate {
     /// Called within an animation block when the dragging view is about to show.
     ///
     /// The default implementation of this method is empty—no need to call `super`.
-    open func tableView(_ tableView: UITableView, showDraggingView view: UIView, at indexPath: IndexPath) {
+    nonisolated open func tableView(_ tableView: UITableView, showDraggingView view: UIView, at indexPath: IndexPath) {
         // Empty implementation, just to simplify overriding (and to show up in code completion).
     }
     
     /// Called within an animation block when the dragging view is about to hide.
     ///
     /// The default implementation of this method is empty—no need to call `super`.
-    open func tableView(_ tableView: UITableView, hideDraggingView view: UIView, at indexPath: IndexPath) {
+    nonisolated open func tableView(_ tableView: UITableView, hideDraggingView view: UIView, at indexPath: IndexPath) {
         // Empty implementation, just to simplify overriding (and to show up in code completion).
     }
     
     /// Called when the dragging gesture's vertical location changes.
     ///
     /// The default implementation of this method is empty—no need to call `super`.
-    open func tableView(_ tableView: UITableView, draggingGestureChanged gesture: UILongPressGestureRecognizer) {
+    nonisolated open func tableView(_ tableView: UITableView, draggingGestureChanged gesture: UILongPressGestureRecognizer) {
         // Empty implementation, just to simplify overriding (and to show up in code completion).
     }
     
