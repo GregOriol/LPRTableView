@@ -16,8 +16,8 @@ let package = Package(
         .target(
             name: "LPRTableView",
             path: ".",
-            sources: ["LPRTableView.swift"],
-            exclude: ["ReorderTest"]
+            exclude: ["ReorderTest"],
+            sources: ["LPRTableView.swift"]
         ),
     ]
 )
